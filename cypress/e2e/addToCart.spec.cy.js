@@ -1,10 +1,9 @@
+import HomePage from "../support/pages/homePage";
+import ViewPort from "./viewPort";
+import viewPort from "./viewPort";
 describe('Add to Cart check',()=> {
-    const viewports = [
-        {width: 1280, height: 720},  // Desktop
-        // {width: 768, height: 1024},  // Tablet
-        //  {width: 375, height: 667}    // Mobile
-    ];
-    viewports.forEach((viewport) => {
+    const viewPort= new ViewPort();
+    viewPort.viewports.forEach((viewport) => {
         it(`should display goods when searching for "smart" 
     on ${viewport.width}x${viewport.height} screen`, () => {
             cy.viewport(viewport.width, viewport.height);
