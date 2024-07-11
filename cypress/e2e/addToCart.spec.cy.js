@@ -9,10 +9,6 @@ describe('Add to Cart check',()=> {
             cy.viewport(viewport.width, viewport.height);
             cy.visit('https://theconnectedshop.com/');
             //       click search with entered keyword
-            cy.get('#shopify-pc__banner__btn-accept')
-                .click();
-            cy.get('.NewsletterPopup__Close')
-                .click();
             cy.get('.Header__SecondaryNav > .HorizontalList > :nth-child(2) > .Heading')
                 .click();
             cy.get('.Search__Input')

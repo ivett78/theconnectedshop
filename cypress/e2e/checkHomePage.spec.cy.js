@@ -17,6 +17,9 @@ describe('Add product to cart on The Connected Shop', () => {
             homePage.checkUrlHomepage();
             homePage.checkTitleHomePage();
             homePage.checkLogo();
+            popUps.cookieAcceptButton();
+            popUps.cookieAcceptButtonClick();
+            popUps.closeNewsletterPopup();
 // sidebar menu button check
 //            homePage.checkSidebarMenuItem();
 // search element icon check
